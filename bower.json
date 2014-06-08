@@ -1,0 +1,19 @@
+{
+  "name": "pb-format",
+  "version": "0.1.0",
+  "authors": [
+    "Menencia <menencia@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "phpjs": "*"
+  }
+}

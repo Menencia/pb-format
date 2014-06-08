@@ -1,0 +1,34 @@
+{
+  "name": "PB format",
+  "description": "Format text from PB textarea",
+  "version": "0.1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": [
+      "bower_components/jquery/dist/jquery.min.js",
+      "bower_components/phpjs/functions/strings/strip_tags.js",
+      "bower_components/phpjs/functions/strings/explode.js",
+      "bower_components/phpjs/functions/strings/substr_count.js",
+      "bower_components/phpjs/functions/strings/htmlspecialchars.js"
+    ]
+  }],
+  "browser_action": {
+    "default_title": "Format text from PB textarea",
+    "default_icon": {
+      "19": "icon_19.png"
+    }
+  },
+  "icons": {
+    "128": "icon_128.png"
+  },
+  "manifest_version": 2
+}
